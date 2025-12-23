@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion'
 import FloatingBubble from '../components/FloatingBubble'
+import SearchBar from '../components/SearchBar'
 
 const Homepage = () => {
   return (
-    <div className="min-h-screen bg-midnight-water flex items-center justify-center overflow-hidden relative">
+    <div className="min-h-screen bg-midnight-water overflow-hidden relative flex flex-col items-center justify-center px-8 py-12">
       {/* Animated gradient overlay */}
       <div 
         className="absolute inset-0 opacity-40"
@@ -30,7 +31,7 @@ const Homepage = () => {
       </div>
 
       {/* Main Content */}
-      <div className='text-center relative z-10'>
+      <div className='text-center relative z-10 mb-16'>
         {/* Title - drops down */}
         <motion.h1
           className='text-6xl font-bold text-foam mb-4'
@@ -85,6 +86,9 @@ const Homepage = () => {
           </motion.button>
         </motion.div>
       </div>
+
+      {/* Search Bar */}
+      <SearchBar />
 
       {/* Floating bubbles */}
       <FloatingBubble delay={0} duration={12} size={80} left="10%" />
