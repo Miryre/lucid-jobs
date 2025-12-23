@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import FloatingBubble from '../components/FloatingBubble'
 
 const Homepage = () => {
   return (
@@ -84,6 +85,14 @@ const Homepage = () => {
           </motion.button>
         </motion.div>
       </div>
+
+      {/* Floating bubbles */}
+      <FloatingBubble delay={0} duration={12} size={80} left="10%" />
+      <FloatingBubble delay={2} duration={10} size={60} left="25%" />
+      <FloatingBubble delay={1} duration={15} size={100} left="50%" />
+      <FloatingBubble delay={3} duration={11} size={70} left="70%" />
+      <FloatingBubble delay={4} duration={13} size={50} left="85%" />
+      <FloatingBubble delay={1.5} duration={14} size={90} left="40%" />
     </div>
   );
 };
